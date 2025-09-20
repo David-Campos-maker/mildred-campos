@@ -53,27 +53,49 @@ $danger-30: color.mix($danger, $base-color, 30%);
 $danger-20: color.mix($danger, $base-color, 20%);
 $danger-10: color.mix($danger, $base-color, 10%);
 
-$background-color: #380D1A;
-$background-color-90: color.mix($background-color, $base-color, 90%);
-$background-color-80: color.mix($background-color, $base-color, 80%);
-$background-color-70: color.mix($background-color, $base-color, 70%);
-$background-color-60: color.mix($background-color, $base-color, 60%);
-$background-color-50: color.mix($background-color, $base-color, 50%);
-$background-color-40: color.mix($background-color, $base-color, 40%);
-$background-color-30: color.mix($background-color, $base-color, 30%);
-$background-color-20: color.mix($background-color, $base-color, 20%);
-$background-color-10: color.mix($background-color, $base-color, 10%);
+$background-color-light: #F6F6F6;
+$background-color-light-90: color.mix($background-color-light, $base-color, 90%);
+$background-color-light-80: color.mix($background-color-light, $base-color, 80%);
+$background-color-light-70: color.mix($background-color-light, $base-color, 70%);
+$background-color-light-60: color.mix($background-color-light, $base-color, 60%);
+$background-color-light-50: color.mix($background-color-light, $base-color, 50%);
+$background-color-light-40: color.mix($background-color-light, $base-color, 40%);
+$background-color-light-30: color.mix($background-color-light, $base-color, 30%);
+$background-color-light-20: color.mix($background-color-light, $base-color, 20%);
+$background-color-light-10: color.mix($background-color-light, $base-color, 10%);
 
-$text-color: #F5F5F5;
-$text-color-90: color.mix($text-color, $base-color, 90%);
-$text-color-80: color.mix($text-color, $base-color, 80%);
-$text-color-70: color.mix($text-color, $base-color, 70%);
-$text-color-60: color.mix($text-color, $base-color, 60%);
-$text-color-50: color.mix($text-color, $base-color, 50%);
-$text-color-40: color.mix($text-color, $base-color, 40%);
-$text-color-30: color.mix($text-color, $base-color, 30%);
-$text-color-20: color.mix($text-color, $base-color, 20%);
-$text-color-10: color.mix($text-color, $base-color, 10%);
+$background-color-dark: #380D1A;
+$background-color-dark-90: color.mix($background-color-dark, $base-color, 90%);
+$background-color-dark-80: color.mix($background-color-dark, $base-color, 80%);
+$background-color-dark-70: color.mix($background-color-dark, $base-color, 70%);
+$background-color-dark-60: color.mix($background-color-dark, $base-color, 60%);
+$background-color-dark-50: color.mix($background-color-dark, $base-color, 50%);
+$background-color-dark-40: color.mix($background-color-dark, $base-color, 40%);
+$background-color-dark-30: color.mix($background-color-dark, $base-color, 30%);
+$background-color-dark-20: color.mix($background-color-dark, $base-color, 20%);
+$background-color-dark-10: color.mix($background-color-dark, $base-color, 10%);
+
+$text-color-light: #F5F5F5;
+$text-color-light-90: color.mix($text-color-light, $base-color, 90%);
+$text-color-light-80: color.mix($text-color-light, $base-color, 80%);
+$text-color-light-70: color.mix($text-color-light, $base-color, 70%);
+$text-color-light-60: color.mix($text-color-light, $base-color, 60%);
+$text-color-light-50: color.mix($text-color-light, $base-color, 50%);
+$text-color-light-40: color.mix($text-color-light, $base-color, 40%);
+$text-color-light-30: color.mix($text-color-light, $base-color, 30%);
+$text-color-light-20: color.mix($text-color-light, $base-color, 20%);
+$text-color-light-10: color.mix($text-color-light, $base-color, 10%);
+
+$text-color-dark: #363636;
+$text-color-dark-90: color.mix($text-color-dark, $base-color, 90%);
+$text-color-dark-80: color.mix($text-color-dark, $base-color, 80%);
+$text-color-dark-70: color.mix($text-color-dark, $base-color, 70%);
+$text-color-dark-60: color.mix($text-color-dark, $base-color, 60%);
+$text-color-dark-50: color.mix($text-color-dark, $base-color, 50%);
+$text-color-dark-40: color.mix($text-color-dark, $base-color, 40%);
+$text-color-dark-30: color.mix($text-color-dark, $base-color, 30%);
+$text-color-dark-20: color.mix($text-color-dark, $base-color, 20%);
+$text-color-dark-10: color.mix($text-color-dark, $base-color, 10%);
 
 :root {
   --base-color: #{$base-color};
@@ -120,25 +142,74 @@ $text-color-10: color.mix($text-color, $base-color, 10%);
   --danger-20: #{$danger-20};
   --danger-10: #{$danger-10};
 
-  --background-color: #{$background-color};
-  --background-color-90: #{$background-color-90};
-  --background-color-80: #{$background-color-80};
-  --background-color-70: #{$background-color-70};
-  --background-color-60: #{$background-color-60};
-  --background-color-50: #{$background-color-50};
-  --background-color-40: #{$background-color-40};
-  --background-color-30: #{$background-color-30};
-  --background-color-20: #{$background-color-20};
-  --background-color-10: #{$background-color-10};
+  --background-color-light: #{$background-color-light};
+  --background-color-light-90: #{$background-color-light-90};
+  --background-color-light-80: #{$background-color-light-80};
+  --background-color-light-70: #{$background-color-light-70};
+  --background-color-light-60: #{$background-color-light-60};
+  --background-color-light-50: #{$background-color-light-50};
+  --background-color-light-40: #{$background-color-light-40};
+  --background-color-light-30: #{$background-color-light-30};
+  --background-color-light-20: #{$background-color-light-20};
+  --background-color-light-10: #{$background-color-light-10};
 
-  --text-color: #{$text-color};
-  --text-color-90: #{$text-color-90};
-  --text-color-80: #{$text-color-80};
-  --text-color-70: #{$text-color-70};
-  --text-color-60: #{$text-color-60};
-  --text-color-50: #{$text-color-50};
-  --text-color-40: #{$text-color-40};
-  --text-color-30: #{$text-color-30};
-  --text-color-20: #{$text-color-20};
-  --text-color-10: #{$text-color-10};
+  --background-color-dark: #{$background-color-dark};
+  --background-color-dark-90: #{$background-color-dark-90};
+  --background-color-dark-80: #{$background-color-dark-80};
+  --background-color-dark-70: #{$background-color-dark-70};
+  --background-color-dark-60: #{$background-color-dark-60};
+  --background-color-dark-50: #{$background-color-dark-50};
+  --background-color-dark-40: #{$background-color-dark-40};
+  --background-color-dark-30: #{$background-color-dark-30};
+  --background-color-dark-20: #{$background-color-dark-20};
+  --background-color-dark-10: #{$background-color-dark-10};
+
+  --text-color-light: #{$text-color-light};
+  --text-color-light-90: #{$text-color-light-90};
+  --text-color-light-80: #{$text-color-light-80};
+  --text-color-light-70: #{$text-color-light-70};
+  --text-color-light-60: #{$text-color-light-60};
+  --text-color-light-50: #{$text-color-light-50};
+  --text-color-light-40: #{$text-color-light-40};
+  --text-color-light-30: #{$text-color-light-30};
+  --text-color-light-20: #{$text-color-light-20};
+  --text-color-light-10: #{$text-color-light-10};
+
+  --text-color-dark: #{$text-color-dark};
+  --text-color-dark-90: #{$text-color-dark-90};
+  --text-color-dark-80: #{$text-color-dark-80};
+  --text-color-dark-70: #{$text-color-dark-70};
+  --text-color-dark-60: #{$text-color-dark-60};
+  --text-color-dark-50: #{$text-color-dark-50};
+  --text-color-dark-40: #{$text-color-dark-40};
+  --text-color-dark-30: #{$text-color-dark-30};
+  --text-color-dark-20: #{$text-color-dark-20};
+  --text-color-dark-10: #{$text-color-dark-10};
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Dancing Script", cursive;
+  }
+
+  a, p {
+    font-family:"Merriweather", serif;
+  }
+  
+  footer {
+    font-family: "Indie Flower", cursive;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../../public/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  color: var(--text-color-dark);
+  font-size: normal;
+  margin: 0 auto;
 }
