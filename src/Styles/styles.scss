@@ -1,0 +1,144 @@
+@use 'sass:color';
+
+@import "./mildWebTools/mild-css-essentials.scss";
+@import "./mildWebTools/mild-flex.scss";
+@import "./mildWebTools/mild-typography.scss";
+@import "./mildWebTools/mild-flex__alignment.scss";
+@import "./mildWebTools/mild-spacing.scss";
+@import "./mildWebTools/mild-user-interactions.scss";
+
+$base-color: #FFFFFF;
+$mixing-color: #AAAAAA;
+
+$base-color-90: color.mix($base-color, $mixing-color, 90%);
+$base-color-80: color.mix($base-color, $mixing-color, 80%);
+$base-color-70: color.mix($base-color, $mixing-color, 70%);
+$base-color-60: color.mix($base-color, $mixing-color, 60%);
+$base-color-50: color.mix($base-color, $mixing-color, 50%);
+$base-color-40: color.mix($base-color, $mixing-color, 40%);
+$base-color-30: color.mix($base-color, $mixing-color, 30%);
+$base-color-20: color.mix($base-color, $mixing-color, 20%);
+$base-color-10: color.mix($base-color, $mixing-color, 10%);
+
+$primary: #FEF4B9;
+$primary-90: color.mix($primary, $base-color, 90%);
+$primary-80: color.mix($primary, $base-color, 80%);
+$primary-70: color.mix($primary, $base-color, 70%);
+$primary-60: color.mix($primary, $base-color, 60%);
+$primary-50: color.mix($primary, $base-color, 50%);
+$primary-40: color.mix($primary, $base-color, 40%);
+$primary-30: color.mix($primary, $base-color, 30%);
+$primary-20: color.mix($primary, $base-color, 20%);
+$primary-10: color.mix($primary, $base-color, 10%);
+
+$secondary: #F5B0D0;
+$secondary-90: color.mix($secondary, $base-color, 90%);
+$secondary-80: color.mix($secondary, $base-color, 80%);
+$secondary-70: color.mix($secondary, $base-color, 70%);
+$secondary-60: color.mix($secondary, $base-color, 60%);
+$secondary-50: color.mix($secondary, $base-color, 50%);
+$secondary-40: color.mix($secondary, $base-color, 40%);
+$secondary-30: color.mix($secondary, $base-color, 30%);
+$secondary-20: color.mix($secondary, $base-color, 20%);
+$secondary-10: color.mix($secondary, $base-color, 10%);
+
+$danger: #EF4171;
+$danger-90: color.mix($danger, $base-color, 90%);
+$danger-80: color.mix($danger, $base-color, 80%);
+$danger-70: color.mix($danger, $base-color, 70%);
+$danger-60: color.mix($danger, $base-color, 60%);
+$danger-50: color.mix($danger, $base-color, 50%);
+$danger-40: color.mix($danger, $base-color, 40%);
+$danger-30: color.mix($danger, $base-color, 30%);
+$danger-20: color.mix($danger, $base-color, 20%);
+$danger-10: color.mix($danger, $base-color, 10%);
+
+$background-color: #380D1A;
+$background-color-90: color.mix($background-color, $base-color, 90%);
+$background-color-80: color.mix($background-color, $base-color, 80%);
+$background-color-70: color.mix($background-color, $base-color, 70%);
+$background-color-60: color.mix($background-color, $base-color, 60%);
+$background-color-50: color.mix($background-color, $base-color, 50%);
+$background-color-40: color.mix($background-color, $base-color, 40%);
+$background-color-30: color.mix($background-color, $base-color, 30%);
+$background-color-20: color.mix($background-color, $base-color, 20%);
+$background-color-10: color.mix($background-color, $base-color, 10%);
+
+$text-color: #F5F5F5;
+$text-color-90: color.mix($text-color, $base-color, 90%);
+$text-color-80: color.mix($text-color, $base-color, 80%);
+$text-color-70: color.mix($text-color, $base-color, 70%);
+$text-color-60: color.mix($text-color, $base-color, 60%);
+$text-color-50: color.mix($text-color, $base-color, 50%);
+$text-color-40: color.mix($text-color, $base-color, 40%);
+$text-color-30: color.mix($text-color, $base-color, 30%);
+$text-color-20: color.mix($text-color, $base-color, 20%);
+$text-color-10: color.mix($text-color, $base-color, 10%);
+
+:root {
+  --base-color: #{$base-color};
+  --base-color-90: #{$base-color-90};
+  --base-color-80: #{$base-color-80};
+  --base-color-70: #{$base-color-70};
+  --base-color-60: #{$base-color-60};
+  --base-color-50: #{$base-color-50};
+  --base-color-40: #{$base-color-40};
+  --base-color-30: #{$base-color-30};
+  --base-color-20: #{$base-color-20};
+  --base-color-10: #{$base-color-10};
+
+  --primary: #{$primary};
+  --primary-90: #{$primary-90};
+  --primary-80: #{$primary-80};
+  --primary-70: #{$primary-70};
+  --primary-60: #{$primary-60};
+  --primary-50: #{$primary-50};
+  --primary-40: #{$primary-40};
+  --primary-30: #{$primary-30};
+  --primary-20: #{$primary-20};
+  --primary-10: #{$primary-10};
+
+  --secondary: #{$secondary};
+  --secondary-90: #{$secondary-90};
+  --secondary-80: #{$secondary-80};
+  --secondary-70: #{$secondary-70};
+  --secondary-60: #{$secondary-60};
+  --secondary-50: #{$secondary-50};
+  --secondary-40: #{$secondary-40};
+  --secondary-30: #{$secondary-30};
+  --secondary-20: #{$secondary-20};
+  --secondary-10: #{$secondary-10};
+
+  --danger: #{$danger};
+  --danger-90: #{$danger-90};
+  --danger-80: #{$danger-80};
+  --danger-70: #{$danger-70};
+  --danger-60: #{$danger-60};
+  --danger-50: #{$danger-50};
+  --danger-40: #{$danger-40};
+  --danger-30: #{$danger-30};
+  --danger-20: #{$danger-20};
+  --danger-10: #{$danger-10};
+
+  --background-color: #{$background-color};
+  --background-color-90: #{$background-color-90};
+  --background-color-80: #{$background-color-80};
+  --background-color-70: #{$background-color-70};
+  --background-color-60: #{$background-color-60};
+  --background-color-50: #{$background-color-50};
+  --background-color-40: #{$background-color-40};
+  --background-color-30: #{$background-color-30};
+  --background-color-20: #{$background-color-20};
+  --background-color-10: #{$background-color-10};
+
+  --text-color: #{$text-color};
+  --text-color-90: #{$text-color-90};
+  --text-color-80: #{$text-color-80};
+  --text-color-70: #{$text-color-70};
+  --text-color-60: #{$text-color-60};
+  --text-color-50: #{$text-color-50};
+  --text-color-40: #{$text-color-40};
+  --text-color-30: #{$text-color-30};
+  --text-color-20: #{$text-color-20};
+  --text-color-10: #{$text-color-10};
+}
