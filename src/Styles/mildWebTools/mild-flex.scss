@@ -1,0 +1,15 @@
+.mild-column {
+  display: flex;
+  flex-direction: column;
+}
+.mild-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.mild-flex-stretch {
+  flex: 1 auto;
+}
+.mild-flex-shrink {
+  flex: 2 auto;
+}
