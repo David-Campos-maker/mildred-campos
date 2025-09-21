@@ -190,7 +190,7 @@ $text-color-dark-10: color.mix($text-color-dark, $base-color, 10%);
     font-family: "Dancing Script", cursive;
   }
 
-  a, p {
+  p {
     font-family:"Merriweather", serif;
   }
   
@@ -216,4 +216,9 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Corrige o posicionamento do scroll por causa da nav-bar fixa */
+#intro, #works, #contacts {
+  scroll-margin-top: 160px; /* Um pouco mais que a altura da nav-bar (150px) */
 }

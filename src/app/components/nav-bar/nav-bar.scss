@@ -1,20 +1,64 @@
-.nav-bar_container {
-    height: 100px;
-    background-color: var(--secondary);
+.nav-bar_main-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 150px;
+    // background-color: rgba(var(--background-color-light-90), 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.nav-bar_container .image {
+.nav-bar_main-container .image {
+    width: 80px;
+    height: 80px;
     font-family: "Dancing Script", cursive;
-    font-size: 24px;
-    color: var(--danger);
+    font-size: 32px;
+    color: var(--primary);
+    background-color: var(--secondary-90); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 12px;
+}
+
+.nav-bar_main-container .links-container {
+    height: 80px;
+    background-color: var(--secondary-90); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 12px;
 }
 
 .link-item {
+    font-family: "Dancing Script", cursive;
+    position: relative; // Essencial para posicionar o pseudo-elemento
+    width: 150px;
+    height: 50px;
     text-decoration: none;
     color: var(--primary);
+    border-radius: 12px;
+    // Unificando as transições para uma melhor performance
+    transition: transform 0.3s ease;
+
+    // O pseudo-elemento que será a nossa borda animada
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 5px; // Posição da borda em relação à base do link
+        left: 50%;
+        transform: translateX(-50%); // Centraliza o elemento
+        width: 0; // Começa com largura zero
+        height: 2px; // Espessura da borda
+        background-color: var(--primary); // Cor da borda
+        transition: width 0.3s ease-in-out; // Animação da largura
+    }
 
     &:hover {
-        transform: scale(1.1);
-        transition: transform 0.3s ease;
+        transform: scale(1.05);
+        
+        &::after {
+            width: 80%; // Largura final da borda ao passar o mouse
+        }
     }
 }
