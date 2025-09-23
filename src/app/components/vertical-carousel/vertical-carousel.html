@@ -1,0 +1,24 @@
+<div class="vertical-carousel_component-container w-100 mild-column main-axis-alignment_center cross-axis-alignment_center mild-ga-md">
+    <div class="vertical-carousel_main-container w-100 h-100 mild-column main-axis-alignment_center cross-axis-alignment_center">
+        <!-- Wrapper para os slides -->
+        <div class="vertical-carousel_slides-wrapper mild-column main-axis-alignment_center cross-axis-alignment_center mild-rg-sm">
+            @for (work of works; track work.title; let i = $index) {
+                <!--
+                    Aplica as classes de animação dinamicamente.
+                    Apenas o slide atual é visível por padrão.
+                -->
+                <div 
+                    class="vertical-carousel_item mild-column main-axis-alignment_center cross-axis-alignment_center"
+                    [class.is-active]="i === currentIndex">
+                    <img [src]="work.path" [alt]="work.title" class="image"/>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- Botões de Navegação -->
+    <div class="vertical-carousel_controls mild-column main-axis-alignment_center cross-axis-alignment_center mild-ga-xs">
+        <button (click)="prev()" aria-label="Anterior">Anterior</button>
+        <button (click)="next()" aria-label="Próximo">Próximo</button>
+    </div>
+</div>
